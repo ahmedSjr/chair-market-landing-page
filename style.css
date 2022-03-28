@@ -6,6 +6,9 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
+/* Main Color #66a80f
+    Gray Color #343a40 */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,11 +20,39 @@ FONT SIZE SYSTEM (px)
 /* ------------------------ */
 body {
   font-family: "Inter", sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #74b816;
 }
 
 .container {
   width: 960px;
   margin: 0 auto;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #74b816;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #82c91e;
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
 }
 
 header,
@@ -92,6 +123,9 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: #74b816;
+  color: #000;
+  padding: 24px;
 }
 
 .testimonial-box {
@@ -148,4 +182,6 @@ h3 {
 
 footer {
   margin-bottom: 48px;
+  font-size: 14px;
+  color: #495057;
 }
